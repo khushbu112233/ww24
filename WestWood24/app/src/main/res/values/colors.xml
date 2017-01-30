@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2f0d2d</color>
+    <color name="colorPrimaryDark">#2f0d2d</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="error_bg_red">#da5050</color>
+    <color name="white">#ffffff</color>
+    <color name="edt_text_bg">#fff</color>
+    <color name="edt_view_bg_line">#4b5158</color>
+    <color name="dashboard_bg">#E1E6EB</color>
+
+    <!--splash color code-->
+    <color name="Black">#000000</color>
+    <color name="login_btn_color">#6D2A85</color>
+    <color name="explore_btn_color">#F8EA12</color>
+
+    <!--login color code-->
+    <color name="loginscreen_bg">#181A1D</color>
+    <color name="edt_hint_bg">#927c53</color>
+
+
+    <!--line dialog color-->
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+    <color name="lightgray">#AAAAAA</color>
+
+
+    <color name="text_tab_selected">#ffffff</color>
+    <color name="text_tab_unselected">#727272</color>
+
+
+    <color name="blue2">#007ED6</color>
+    <color name="blue3">#8399EB</color>
+    <color name="purple">#451b54</color>
+    <color name="sign_up_bg">#904e78</color>
+    <color name="dark_purple">#2f0d2d</color>
+    <color name="purple1">#8E6CEF</color>
+    <color name="purple2">#9C46D0</color>
+    <color name="purple3">#C758D0</color>
+    <color name="pink">#E01E84</color>
+    <color name="red">#FF0000</color>
+    <color name="orange1">#FF7300</color>
+    <color name="orange2">#FFAF00</color>
+    <color name="yellow1">#FFEC00</color>
+    <color name="yell0w2">#D5F30B</color>
+    <color name="green1">#52D726</color>
+    <color name="green2">#1BAA2F</color>
+    <color name="green3">#2DCB75</color>
+    <color name="light_blue1">#26D7AE</color>
+    <color name="light_blue2">#7CDDDD</color>
+    <color name="light_blue3">#5FB7D4</color>
+    <color name="light_blue4">#97D9FF</color>
+    <color name="light_yellow">#f6ee26</color>
+    <color name="purple_see_more">#904e78</color>
+
+    <integer-array name="androidcolors">
+        <item>@color/blue2</item>
+        <item>@color/blue3</item>
+        <item>@color/purple1</item>
+        <item>@color/purple2</item>
+        <item>@color/purple3</item>
+        <item>@color/pink</item>
+        <item>@color/red</item>
+        <item>@color/orange1</item>
+        <item>@color/orange2</item>
+        <item>@color/yellow1</item>
+        <item>@color/yell0w2</item>
+        <item>@color/green1</item>
+        <item>@color/green2</item>
+        <item>@color/green3</item>
+        <item>@color/light_blue1</item>
+        <item>@color/light_blue2</item>
+        <item>@color/light_blue3</item>
+        <item>@color/light_blue4</item>
+
+    </integer-array>
+</resources>

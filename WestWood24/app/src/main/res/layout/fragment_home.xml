@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!-- our tablayout to display tabs  -->
+  <!--  <android.support.design.widget.TabLayout
+        android:id="@+id/activity_dash_board_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:tabIndicatorColor="#FFD425"
+        android:theme="@style/TabLayout_Theme"
+        app:tabBackground="@color/loginscreen_bg"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/MineCustomTabText" />
+
+    &lt;!&ndash;app:tabIndicatorColor="@android:color/darker_gray"
+    app:tabIndicatorHeight="4dp"
+    app:tabBackground="@drawable/tab_color_selector"&ndash;&gt;
+    &lt;!&ndash; View pager to swipe views &ndash;&gt;
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_dash_board_pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />-->
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" />
+
+
+</LinearLayout>

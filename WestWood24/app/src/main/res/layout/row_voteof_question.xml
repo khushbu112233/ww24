@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:id="@+id/row_vote_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/row_vote_question_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="good"
+                android:textSize="16sp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/row_vote_top_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row_vote_question_tv"
+                android:layout_marginTop="5dp">
+
+                <!--<RadioGroup
+                    android:id="@+id/row_voteof_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                </RadioGroup>-->
+
+
+
+
+
+                <!--<CheckBox
+                    android:id="@+id/row_vote_que_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row_vote_question_tv"
+                    android:text=""
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/row_vote_que_radiobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone" />-->
+
+                <!--<TextView
+                    android:id="@+id/row_vote_answer_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="answer" />-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+    >
+
+
+    <include layout="@layout/header_layout"></include>
+    <TextView
+        android:id="@+id/txt_title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/header_main_rl"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow1"
+        android:textSize="@dimen/edittextsize"
+        />
+
+    <com.westwood24.connect.font.TextViewMyriad_bld
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/txt_title_id"
+        android:layout_marginTop="15dp"/>
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart1"
+        android:layout_width="200dp"
+       android:layout_centerHorizontal="true"
+        android:layout_height="200dp"
+        android:layout_below="@+id/question"
+        android:layout_marginTop="20dp"
+        ></com.github.mikephil.charting.charts.PieChart>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/chart1"
+    android:weightSum="2">
+    <ListView android:id="@+id/lstlableodd"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/chart1"
+        android:divider="@null"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"></ListView>
+    <ListView android:id="@+id/lstlableeven"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/chart1"
+        android:divider="@null"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>
+
+</RelativeLayout>

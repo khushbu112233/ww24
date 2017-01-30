@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_layout"></include>
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/usertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="WestWood24"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:textColor="@color/light_yellow"
+            android:textSize="@dimen/edittextsize"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <com.westwood24.connect.utils.CircularImageView
+            android:id="@+id/drawer_list_user_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/userprofile_cirlce"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:visibility="gone"></View>
+        <TextView
+            android:id="@+id/edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Edit Profile"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/light_yellow"
+            android:textSize="@dimen/lablesize"
+            android:layout_gravity="center"
+            android:layout_below="@+id/drawer_list_user_image"
+            android:layout_alignLeft="@+id/drawer_list_user_image"
+            android:layout_alignStart="@+id/drawer_list_user_image" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/light_yellow"
+        android:textSize="@dimen/edittextsize" />
+
+    <View
+        android:id="@+id/list_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/edt_hint_bg" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:visibility="gone"></View>
+
+</LinearLayout>

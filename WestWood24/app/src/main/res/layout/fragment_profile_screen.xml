@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_bg"
+    tools:context=".connect.activity.ProfileScreenActivity">
+
+
+    <!--<include layout="@layout/header_layout"></include>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_main_rl"
+        android:layout_marginTop="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.westwood24.connect.utils.CircularImageView
+                    android:id="@+id/fragment_profile_profile_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/userprofile_cirlce"  />
+
+                <ImageView
+                    android:id="@+id/fragment_profile_pick_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toEndOf="@+id/fragment_profile_profile_img"
+                    android:layout_toRightOf="@+id/fragment_profile_profile_img"
+                    android:src="@mipmap/editpic"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/fragment_profile_firstname_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_field_background_yellow"
+                android:gravity="center_horizontal"
+                android:hint="@string/firstname"
+                android:imeOptions="actionNext"
+                android:maxLength="25"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textColor="@color/edt_text_bg"
+                android:textColorHint="@color/edt_hint_bg"
+                android:textSize="@dimen/edittextsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:visibility="gone"
+                android:background="@color/edt_hint_bg" />
+
+
+            <EditText
+                android:id="@+id/fragment_profile_lastname_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_field_background_yellow"
+                android:gravity="center_horizontal"
+                android:hint="@string/lastname"
+                android:imeOptions="actionNext"
+                android:paddingTop="5dp"
+                android:maxLength="25"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textColor="@color/edt_text_bg"
+                android:textColorHint="@color/edt_hint_bg"
+                android:textSize="@dimen/edittextsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:visibility="gone"
+                android:background="@color/edt_hint_bg" />
+
+            <EditText
+                android:id="@+id/fragment_profile_phone_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_field_background_yellow"
+                android:gravity="center_horizontal"
+                android:hint="@string/phone"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textColor="@color/edt_text_bg"
+                android:textColorHint="@color/edt_hint_bg"
+                android:textSize="@dimen/edittextsize" />
+
+            <View
+                android:id="@+id/fragment_profile_phone_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:visibility="gone"
+                android:background="@color/edt_hint_bg" />
+
+
+            <EditText
+                android:id="@+id/fragment_profile_country_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/edittext_field_background_yellow"
+                android:editable="false"
+                android:gravity="center_horizontal"
+                android:hint="@string/country"
+                android:imeOptions="actionNext"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textColor="@color/edt_text_bg"
+                android:textColorHint="@color/edt_hint_bg"
+                android:textSize="@dimen/edittextsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:visibility="gone"
+                android:background="@color/edt_hint_bg" />
+
+
+            <EditText
+                android:id="@+id/fragment_profile_state_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_field_background_yellow"
+                android:editable="false"
+                android:gravity="center_horizontal"
+                android:hint="@string/state"
+                android:imeOptions="actionNext"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textColor="@color/edt_text_bg"
+                android:textColorHint="@color/edt_hint_bg"
+                android:textSize="@dimen/edittextsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:visibility="gone"
+                android:background="@color/edt_hint_bg" />
+
+
+            <EditText
+                android:id="@+id/fragment_profile_zipcode_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_field_background_yellow"
+                android:gravity="center_horizontal"
+                android:hint="@string/zipcode"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:textColor="@color/edt_text_bg"
+                android:textColorHint="@color/edt_hint_bg"
+                android:textSize="@dimen/edittextsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:visibility="gone"
+                android:background="@color/edt_hint_bg" />
+
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:orientation="vertical"
+                 android:padding="10dp">
+
+                 <TextView
+                     android:id="@+id/tvfirstname"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/firstname"
+                     android:textAppearance="?android:attr/textAppearanceSmall"
+                     android:textSize="@dimen/lablesize"
+                     android:visibility="gone" />
+
+
+                 <EditText
+                     android:id="@+id/fragment_profile_firstname_edt"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@null"
+                     android:hint="@string/firstname"
+                     android:imeOptions="actionNext"
+                     android:paddingRight="6dp"
+                     android:singleLine="true"
+                     android:textSize="@dimen/edittextsize" />
+             </LinearLayout>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.2dp"
+                 android:layout_marginTop="1dp"
+                 android:background="@color/edt_view_bg_line" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:orientation="vertical"
+                 android:padding="10dp">
+
+                 <TextView
+                     android:id="@+id/tvlastname"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/lastname"
+                     android:textAppearance="?android:attr/textAppearanceSmall"
+                     android:textSize="@dimen/lablesize"
+                     android:visibility="gone" />
+
+
+                 <EditText
+                     android:id="@+id/fragment_profile_lastname_edt"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@null"
+                     android:hint="@string/lastname"
+                     android:imeOptions="actionNext"
+                     android:paddingRight="6dp"
+                     android:singleLine="true"
+                     android:textSize="@dimen/edittextsize" />
+
+
+             </LinearLayout>
+
+
+
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.2dp"
+                 android:layout_marginTop="1dp"
+                 android:background="@color/edt_view_bg_line" />
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:orientation="vertical"
+                 android:padding="10dp">
+
+                 <TextView
+                     android:id="@+id/tvcountry"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/country"
+                     android:textAppearance="?android:attr/textAppearanceSmall"
+                     android:textSize="@dimen/lablesize"
+                     android:visibility="gone" />
+
+
+                 <EditText
+                     android:id="@+id/fragment_profile_country_edt"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@null"
+                     android:hint="@string/country"
+                     android:imeOptions="actionNext"
+                     android:paddingRight="6dp"
+                     android:singleLine="true"
+                     android:textSize="@dimen/edittextsize" />
+
+
+             </LinearLayout>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.2dp"
+                 android:layout_marginTop="1dp"
+                 android:background="@color/edt_view_bg_line" />
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:orientation="vertical"
+                 android:padding="10dp">
+
+                 <TextView
+                     android:id="@+id/tvstate"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/state"
+                     android:textAppearance="?android:attr/textAppearanceSmall"
+                     android:textSize="@dimen/lablesize"
+                     android:visibility="gone" />
+
+
+                 <EditText
+                     android:id="@+id/fragment_profile_state_edt"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@null"
+                     android:hint="@string/state"
+                     android:imeOptions="actionNext"
+                     android:paddingRight="6dp"
+                     android:singleLine="true"
+                     android:textSize="@dimen/edittextsize" />
+
+
+             </LinearLayout>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.2dp"
+                 android:layout_marginTop="1dp"
+                 android:background="@color/edt_view_bg_line" />
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:orientation="vertical"
+                 android:padding="10dp">
+
+                 <TextView
+                     android:id="@+id/tvzipcode"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/zipcode"
+                     android:textAppearance="?android:attr/textAppearanceSmall"
+                     android:textSize="@dimen/lablesize"
+                     android:visibility="gone" />
+
+
+                 <EditText
+                     android:id="@+id/fragment_profile_zipcode_edt"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@null"
+                     android:hint="@string/zipcode"
+                     android:imeOptions="actionDone"
+                     android:inputType="number"
+                     android:paddingRight="6dp"
+                     android:singleLine="true"
+                     android:textSize="@dimen/edittextsize" />
+
+
+             </LinearLayout>
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="0.2dp"
+                 android:layout_marginTop="1dp"
+                 android:background="@color/edt_view_bg_line" />-->
+
+
+            <Button
+                android:id="@+id/fragment_profile_updateprofile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/light_yellow"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/update_profile"
+                android:textAllCaps="true"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/login_btn_size" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

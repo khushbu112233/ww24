@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '21.1.2'
+
+    dexOptions {
+        jumboMode = true
+    }
+
+    defaultConfig {
+        applicationId "com.westwood24"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile project(':simple-crop-image-lib')
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+    compile 'com.github.deano2390:FlowTextView:2.0.5'
+    compile 'org.sufficientlysecure:html-textview:3.1'
+    compile files('libs/jsoup-1.10.1.jar')
+}

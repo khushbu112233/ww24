@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <com.westwood24.connect.utils.CircularImageView
+        android:id="@+id/row_comment_user_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/userprofile_cirlce"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/row_comment_uname_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/row_comment_user_img"
+        android:paddingLeft="10dp"
+        android:text="Dharmesh"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/row_comment_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:layout_toEndOf="@+id/row_comment_uname_tv"
+        android:layout_toRightOf="@+id/row_comment_uname_tv"
+        android:paddingLeft="2dp"
+        android:textColor="#ffffff"
+        android:text="Dharmesh"
+        android:textSize="16sp" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:linksClickable="true"
+            android:text="emil"
+            android:textColor="@color/white"
+            android:textSize="@dimen/edittextsize" />
+
+        <TextView
+            android:id="@+id/txt_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:gravity="left"
+            android:linksClickable="true"
+            android:text="By registering you are agreeing to our"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lablesize" />
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/row_comment_uname_tv"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>

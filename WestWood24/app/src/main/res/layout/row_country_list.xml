@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <TextView android:id="@+id/txtcountry_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Select Broker Server"
+        android:textColor="@android:color/black"
+        android:gravity="left|center_vertical"
+        android:textSize="12sp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>
